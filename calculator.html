@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+  </head>
+  <body>
+    <div class="calculator">
+        <h1>CALCULATOR</h1>
+      <input type="text" id="display" disabled>
+      <table>
+        <tr>
+            
+          <td><button class="operator" onclick="clearDisplay()">C</button></td>
+          <td><button class="operator" onclick="backspace()">CE</button></td>
+          <td><button class="operator" onclick="insertValue('/')">/</button></td>
+          <td><button class="operator" onclick="insertValue('*')">*</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="insertValue('7')">7</button></td>
+          <td><button onclick="insertValue('8')">8</button></td>
+          <td><button onclick="insertValue('9')">9</button></td>
+          <td><button class="operator" onclick="insertValue('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="insertValue('4')">4</button></td>
+          <td><button onclick="insertValue('5')">5</button></td>
+          <td><button onclick="insertValue('6')">6</button></td>
+          <td><button class="operator" onclick="insertValue('+')">+</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="insertValue('1')">1</button></td>
+          <td><button onclick="insertValue('2')">2</button></td>
+          <td><button onclick="insertValue('3')">3</button></td>
+          <td rowspan="2"><button class="operator" onclick="calculate()">=</button></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button onclick="insertValue('0')">0</button></td>
+          <td><button onclick="insertValue('.')">.</button></td>
+        </tr>
+      </table>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
